@@ -1,0 +1,89 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+.btn {
+  border: Dotted;
+  position: relative;
+  background-color: #ff0000;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 28px 90px;
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 15px 30px;
+  color: inherit;
+  letter-spacing: 2px;
+  font-size: 1em;
+  outline: none;
+  -moz-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.btn:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.btn_perspective {
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  perspective: 800px;
+  display: inline-block;
+}
+.btn-3d:active {
+  background-color: #f3f3f3;
+}
+.btn-3db:after {
+  width: 100%;
+  height: 40%;
+  left: 0;
+  top: 100%;
+  background: #53a6d7;
+  -webkit-transform-origin: 0% 0%;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform-origin: 0% 0%;
+  -moz-transform: rotateX(-90deg);
+  -ms-transform-origin: 0% 0%;
+  -ms-transform: rotateX(-90deg);
+  transform-origin: 0% 0%;
+  transform: rotateX(-90deg);
+}
+.btn-3db:hover {
+  -webkit-transform: rotateX(35deg);
+  -moz-transform: rotateX(35deg);
+  -ms-transform: rotateX(35deg);
+  transform: rotateX(35deg);
+}
+.box
+{
+width:800px;
+margin :0 auto;
+
+}
+
+body
+{
+background-color: #FFCCCB;
+}
+
+*
+{
+    font-family: Open Sans;
+}
+
+.row{
+    border-bottom: 2px solid black;
+}
+
+.heading {
+    background-color: #00478d;
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    padding: 7px 30px 7px 15px;
+    font-size: 20px;
+    margin : 15px,20px,0px,0px;
+    text-transform: uppercase;
+}
